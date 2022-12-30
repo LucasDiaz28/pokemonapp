@@ -6,8 +6,8 @@ function Cards({id, img, name, weight}) {
  
   return (
     
-      <div className="shadow  border border-dark mr-4 card  d-flex justify-content-center align-items-center h-100 text-capitalize " >
-          <img src={img} alt={name} className=" card-img-top imgP shadow-sm "/>
+      <div className="rounded-5 shadow  border border-dark mr-4 card  d-flex justify-content-center align-items-center h-100 text-capitalize " >
+          <img src={img} alt={name} className="rounded-5 card-img-top imgP shadow-sm "/>
           <div className=' card-body text-center'>
               <h5 className=" text fs-6 border-bottom border-grey pb-1">{name}</h5>
               <p className='card-text text fs-6'>Peso: {weight} kg</p>
