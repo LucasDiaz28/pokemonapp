@@ -13,7 +13,7 @@ function Pokemon() {
     useEffect(()=>{
        const info = [];
        const infoPokemon = async () => {
-        for (let i = 1; i <1000; i++){
+        for (let i = 1; i <100; i++){
              const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
            const infoPokemons = await data.json()            
              info.push(infoPokemons)
