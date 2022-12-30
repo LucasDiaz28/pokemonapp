@@ -8,7 +8,7 @@ function Search() {
             "front_default":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
     },
         "name":  "Bulbasaur",
-        "weight": 9,
+        "weight": 90,
         "id": 1
 }  
 
