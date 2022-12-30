@@ -8,15 +8,15 @@ function PokemonMain({peso, name, img, numPokedex}) {
    
 
 useEffect(()=>{
+  const getPokemonMain = async () => {
+    const dato = await fetch(`https://pokeapi.co/api/v2/pokemon/1`)
+    const datoPokemonMain = await dato.json();
+    setPokemonMain(datoPokemonMain)
+  }
+  getPokemonMain()
     
-    getPokemonMain()
 }, [] )
 
-const getPokemonMain = async () => {
-  const dato = await fetch(`https://pokeapi.co/api/v2/pokemon/1`)
-  const datoPokemonMain = await dato.json();
-  setPokemonMain(datoPokemonMain)
-}
 
   return (
     <div className='border- mx-auto  col-4 col-lg-3 mt-2 '>
